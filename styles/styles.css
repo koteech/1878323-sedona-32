@@ -1,0 +1,28 @@
+.img-text {
+  width: 1200px;
+  height: 485px;
+  color: black;
+  background-color: #FFFFFF;
+  background:
+    url("../img/main-logo-div.svg") no-repeat 0 100%,
+    url("../img/main-logo-bg.jpg") no-repeat 0 0;
+  background-size: 100% auto;
+}
+
+.subscribe {
+  width: 1200px;
+  height: 411px;
+  color: black;
+  background-color: #FFFFFF;
+  background: url("../img/subscribe-bg.jpg") no-repeat;
+  background-size: 100% auto;
+}
+
+.catalog-outer-header {
+  width: 1200px;
+  height: 408px;
+  color: black;
+  background-color: #FFFFFF;
+  background: url("../img/catalog-filter-bg.jpg") no-repeat;
+  background-size: 100% auto;
+}
