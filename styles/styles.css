@@ -19,12 +19,12 @@ body {
   font-size: 18px;
   line-height: 21px;
   color: #000000;
-  background-color: #FFFFFF;
+  background-color: #E5E5E5;
 }
 
 .header {
   color: #000000;
-  background: #FFFFFF;
+    background-color: #FFFFFF;
 }
 
 .navigation-link {
@@ -37,6 +37,10 @@ body {
   background-color: #FFFFFF;
   text-decoration: none;
   text-transform: capitalize;
+}
+
+.page-footer {
+  background-color: #FFFFFF;
 }
 
 .footer-contacts-address-phone {
@@ -102,6 +106,7 @@ body {
 
 .arguments, .booking {
   text-align: center;
+  background-color: #FFFFFF;
 }
 
 .main-header {
@@ -170,6 +175,10 @@ body {
   background-color: #83B3D3;
   background: url("../img/catalog-filter-bg.jpg") no-repeat;
   background-size: 100% auto;
+}
+
+.catalog-object {
+  background-color: #FFFFFF;
 }
 
 .hotel-head {
