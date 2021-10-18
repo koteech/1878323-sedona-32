@@ -7,18 +7,17 @@
 </head>
 <body>
 <header class="header">
-  <nav class="navigation-left">
-    <ul class="navigation-left-list">
+  <nav class="navigation">
+    <ul class="navigation-list">
       <li class="navigation-left-item"><a class="navigation-link" href="index.html">Главная</a></li>
       <li class="navigation-left-item"><a class="navigation-link" href="#">О Седоне</a></li>
       <li class="navigation-left-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
     </ul>
-  </nav>
-  <a class="logo-link" href="index.html">
-    <img alt="Логотип Седона" class="logo-img" height="70" src="img/header-logo.svg" width="138">
-  </a>
-  <div class="navigation-right">
-    <ul class="navigation-right-list navigation-user">
+    <a class="logo-link" href="index.html">
+      <img alt="Логотип Седона" class="logo-img" height="70" src="img/header-logo.svg" width="138">
+    </a>
+
+    <ul class="navigation-list navigation-user">
       <li class="navigation-right-item">
         <a class="search" href="#">
           <span class="visually-hidden">Поиск</span>
@@ -38,26 +37,30 @@
         <a class="button button-want" href="#">Хочу сюда!</a>
       </li>
     </ul>
-  </div>
+  </nav>
 </header>
 
-<main class="index-main">
-  <section class="welcome">
-    <div class="img-text">
-      <h1 class="visually-hidden">Седона</h1>
-      <img alt="Добро пожаловать в Седону" class="main-logo-welc" height="352" src="img/main-logo-welc.svg" width="458">
-    </div>
-  </section>
-  <section class="arguments">
-    <div class="head-text">
-      <h1 class="visually-hidden">Преимущества</h1>
-      <h2 class="main-header">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
+<main class="main-container index-main">
+  <div class="page-container">
+    <section class="welcome">
+      <div class="img-text">
+        <h1 class="visually-hidden">Седона</h1>
+        <img alt="Добро пожаловать в Седону" class="main-logo-welc" height="352" src="img/main-logo-welc.svg"
+             width="458">
+      </div>
+    </section>
+    <section class="arguments">
+      <div class="head-text">
+        <h1 class="visually-hidden">Преимущества</h1>
+        <h2 class="main-header">Седона — небольшой городок в Аризоне,<br>заслуживающий большего!</h2>
       <p class="main-subheader">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </div>
     <div class="main-argument first-argument">
+      <div class="argument-title">
       <h3 class="first-argument-title">Настоящий<br>городок</h3>
       <p class="first-argument-number">-№1-</p>
       <p class="first-argument-description">Седона — не аттракцион<br>для туристов, там течёт<br>своя жизнь</p>
+      </div>
       <img alt="Первый аргумент" class="first-argument-image" height="384" src="img/arguments-first.jpg" width="800">
     </div>
     <div class="first-subargument">
@@ -67,13 +70,13 @@
           <h3 class="first-subargument-title">Жилье</h3>
           <p class="first-subargument-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
         </li>
-        <li>
+        <li class="first-subargument-item">
           <img alt="Еда" class="first-subargument-image" height="70" src="img/argument-first-food.svg" width="74">
           <h3 class="first-subargument-title">Еда</h3>
           <p class="first-subargument-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
             разочаруетесь!</p>
         </li>
-        <li>
+        <li class="first-subargument-item">
           <img alt="Сувениры" class="first-subargument-image" height="76" src="img/argument-first-gift.svg" width="64">
           <h3 class="first-subargument-title">Сувениры</h3>
           <p class="first-subargument-description">Не только китайского,<br>но и настоящего местного<br>производства!
@@ -83,10 +86,11 @@
     </div>
     <div class="main-argument second-argument">
       <img alt="Второй аргумент" class="second-argument-image" height="384" src="img/arguments-second.jpg" width="800">
-      <img class="second-argument-image" src="">
+      <div class="argument-title">
       <h3 class="second-argument-title">Там есть<br>мост дьявола</h3>
       <p class="second-argument-number">-№2-</p>
       <p class="second-argument-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
+      </div>
     </div>
     <div class="other-argument">
       <ul class="other-argument-list">
@@ -95,12 +99,12 @@
           <p class="other-argument-description">-№3-</p>
           <p class="other-argument-description">Все достопримечательности<br>находятся очень близко</p>
         </li>
-        <li>
+        <li class="other-argument-item">
           <h3 class="other-argument-title">Красивая<br>дорога</h3>
           <p class="other-argument-description">-№4-</p>
           <p class="other-argument-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
         </li>
-        <li>
+        <li class="other-argument-item">
           <h3 class="other-argument-title">Мало<br>туристов</h3>
           <p class="other-argument-description">-№5-</p>
           <p class="other-argument-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
@@ -130,6 +134,7 @@
       </button>
     </form>
   </section>
+  </div>
 </main>
 
 <footer class="page-footer">
