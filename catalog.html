@@ -9,39 +9,41 @@
 <header class="header">
   <nav class="navigation">
     <ul class="navigation-list">
-      <li class="navigation-left-item"><a class="navigation-link" href="index.html">Главная</a></li>
-      <li class="navigation-left-item"><a class="navigation-link" href="#">О Седоне</a></li>
-      <li class="navigation-left-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+      <li class="navigation-left-item"><a class="navigation-left-link" href="index.html">Главная</a></li>
+      <li class="navigation-left-item"><a class="navigation-left-link" href="#">О Седоне</a></li>
+      <li class="navigation-left-item"><a class="navigation-left-link" href="catalog.html">Гостиницы</a></li>
     </ul>
     <a class="logo-link" href="index.html">
       <img alt="Логотип Седона" class="logo-img" height="70" src="img/header-logo.svg" width="138">
     </a>
-
     <ul class="navigation-list navigation-user">
       <li class="navigation-right-item">
-        <a class="search" href="#">
+        <a class="search navigation-right-link" href="#">
           <span class="visually-hidden">Поиск</span>
           <img alt="Поиск" class="icon-search" height="18.1" src="img/icon/icon-search.svg" width="18">
         </a>
       </li>
-      <li>
-        <a class="favourites" href="#">
-          <span class="visually-hidden">Избранное</span>
-          <img alt="Избранное" class="icon-favourite" height="17" src="img/icon/icon-favourite.svg" width="18">
-        </a>
-        <button class="favourites-info" type="button">
-          <span class="visually-hidden">Избранные объекты</span>
-        </button>
+      <li class="navigation-right-item">
+        <div class="navigation-right-link">
+          <a class="favourites" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <img alt="Избранное" class="icon-favourite" height="17" src="img/icon/icon-favourite.svg" width="18">
+          </a>
+          <button class="favourites-info" type="button">
+            <span class="visually-hidden">Избранные объекты</span>
+          </button>
+        </div>
       </li>
-      <li>
-        <a class="button button-want" href="#">Хочу сюда!</a>
+      <li class="navigation-right-item">
+        <a class="button button-want navigation-right-link" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
 </header>
 
+
 <main class="main-container catalog-main">
-  <div class="page-container">
+
   <section class="catalog-outer-header">
     <header class="catalog-header">
       <h1 class="catalog-header-title">Гостиницы Седоны</h1>
@@ -141,12 +143,13 @@
       </form>
     </section>
   </section>
+  <div class="page-container-catalog">
   <section class="catalog-object">
     <div class="catalog_first_row">
       <div class="count-found">
-        <h2>Найдено гостиниц: 38</h2>
+        <h2 class="count-found-title">Найдено гостиниц: 38</h2>
       </div>
-      <div class="sort">
+      <div class="sort-visible">
         <form class="sorting-type">
           <label class="visually-hidden" for="sorting">Сортировка</label>
           <select class="select-control" id="sorting" name="sorting">
@@ -155,8 +158,6 @@
             <option value="expensive">Сначала дорогое</option>
           </select>
         </form>
-      </div>
-      <div class="type-visible">
         <a class="button button-light" href="#">
           <span class="visually-hidden">Показать список</span>
           <img alt="Показать список" class="icon-list" height="14" src="img/icon/icon-list.svg" width="16">
@@ -169,8 +170,10 @@
           <span class="visually-hidden">Показать карточки</span>
           <img alt="Показать карточки" class="icon-tile" height="14" src="img/icon/icon-tile.svg" width="16">
         </a>
+
       </div>
     </div>
+    <div class="catalog">
     <div class="catalog-hotel">
       <img alt="Amara Resort & Spa" class="hotel-img" height="120" src="img/hotel/hotel-amara.jpg" width="180">
       <div class="hotel-information">
@@ -245,7 +248,7 @@
         </div>
         <div class="catalog-button">
           <button class="button button-additional" href="#">Подробнее</button>
-          <button class="button button-favourites" type="submit">В избранное</button>
+          <button class="button button-favourites green" type="submit">В избранное</button>
         </div>
       </div>
       <div class="rating-block">
@@ -289,13 +292,14 @@
         </div>
       </div>
     </div>
-    <div>
+    </div>
+    <div class="pagination-show-more-block">
       <button class="button pagination-show-more" type="button">Загрузить ещё</button>
     </div>
     <div class="object-list-pagination">
       <ul class="pagination">
-        <li class="pagination-item">
-          <a class="pagination-link pagination-current">1</a>
+        <li class="pagination-item pagination-current">
+          <a class="pagination-link">1</a>
         </li>
         <li class="pagination-item">
           <a class="pagination-link" href="#">2</a>
@@ -313,10 +317,8 @@
           <a class="pagination-link" href="#">10</a>
         </li>
       </ul>
-    </div>
-    <div class="object-list-count">
       <form class="object-count">
-        <label class="visually-hidden" for="object">Гостиниц на странице:</label>
+        <label class="object-count-title" for="object">Гостиниц на странице:</label>
         <select class="object-control" id="object" name="object">
           <option value="4">4</option>
           <option value="6">6</option>
@@ -326,19 +328,20 @@
       </form>
     </div>
   </section>
-  <div class="subscribe subscribe-hotel">
-    <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
-    <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
-    <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
-      <p class="newsletter-email">
-        <label class="visually-hidden" for="newsletter-email">Email</label>
-        <input class="field" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required
-               type="email">
-      </p>
-      <button class="button button-subscribe" type="submit">
-        <span class="visually-hidden">Подписаться</span>
-      </button>
-    </form>
+    <section class="subscribe subscribe-hotel">
+      <h3 class="subscribe-title subscribe-title-hotel">Подпишитесь на рассылку</h3>
+      <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+      <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
+        <div class="subscribe-email-block">
+          <label class="visually-hidden" for="subscribe-email">Email</label>
+          <input class="field" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required
+                 type="email">
+          <button class="button button-subscribe" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
+        </div>
+      </form>
+    </section>
   </div>
   </div>
 </main>

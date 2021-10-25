@@ -9,32 +9,33 @@
 <header class="header">
   <nav class="navigation">
     <ul class="navigation-list">
-      <li class="navigation-left-item"><a class="navigation-link" href="index.html">Главная</a></li>
-      <li class="navigation-left-item"><a class="navigation-link" href="#">О Седоне</a></li>
-      <li class="navigation-left-item"><a class="navigation-link" href="catalog.html">Гостиницы</a></li>
+      <li class="navigation-left-item"><a class="navigation-left-link" href="index.html">Главная</a></li>
+      <li class="navigation-left-item"><a class="navigation-left-link" href="#">О Седоне</a></li>
+      <li class="navigation-left-item"><a class="navigation-left-link" href="catalog.html">Гостиницы</a></li>
     </ul>
     <a class="logo-link" href="index.html">
       <img alt="Логотип Седона" class="logo-img" height="70" src="img/header-logo.svg" width="138">
     </a>
-
     <ul class="navigation-list navigation-user">
       <li class="navigation-right-item">
-        <a class="search" href="#">
+        <a class="search navigation-right-link" href="#">
           <span class="visually-hidden">Поиск</span>
           <img alt="Поиск" class="icon-search" height="18.1" src="img/icon/icon-search.svg" width="18">
         </a>
       </li>
-      <li>
-        <a class="favourites" href="#">
-          <span class="visually-hidden">Избранное</span>
-          <img alt="Избранное" class="icon-favourite" height="17" src="img/icon/icon-favourite.svg" width="18">
-        </a>
-        <button class="favourites-info" type="button">
-          <span class="visually-hidden">Избранные объекты</span>
-        </button>
+      <li class="navigation-right-item">
+        <div class="navigation-right-link">
+          <a class="favourites" href="#">
+            <span class="visually-hidden">Избранное</span>
+            <img alt="Избранное" class="icon-favourite" height="17" src="img/icon/icon-favourite.svg" width="18">
+          </a>
+          <button class="favourites-info" type="button">
+            <span class="visually-hidden">Избранные объекты</span>
+          </button>
+        </div>
       </li>
-      <li>
-        <a class="button button-want" href="#">Хочу сюда!</a>
+      <li class="navigation-right-item">
+        <a class="button button-want navigation-right-link" href="#">Хочу сюда!</a>
       </li>
     </ul>
   </nav>
@@ -63,27 +64,32 @@
       </div>
       <img alt="Первый аргумент" class="first-argument-image" height="384" src="img/arguments-first.jpg" width="800">
     </div>
-    <div class="first-subargument">
-      <ul class="first-subargument-list">
-        <li class="first-subargument-item">
+<!--    <div class="first-subargument">-->
+      <ul class="argument-list first-subargument-list">
+        <li class="argument-item first-subargument-item">
+          <div class="argument-align">
           <img alt="Жилье" class="first-subargument-image" height="72" src="img/argument-first-home.svg" width="74.7">
-          <h3 class="first-subargument-title">Жилье</h3>
-          <p class="first-subargument-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+          <h3 class="argument-item-title first-subargument-title">Жилье</h3>
+          <p class="argument-item-description first-subargument-description">Рекомендуем пожить<br>в настоящем мотеле,<br>всё как в кино!</p>
+          </div>
         </li>
-        <li class="first-subargument-item">
+        <li class="argument-item first-subargument-item">
+          <div class="argument-align">
           <img alt="Еда" class="first-subargument-image" height="70" src="img/argument-first-food.svg" width="74">
-          <h3 class="first-subargument-title">Еда</h3>
-          <p class="first-subargument-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
+          <h3 class="argument-item-title first-subargument-title">Еда</h3>
+          <p class="argument-item-description first-subargument-description">Всегда заказывайте<br>топовый фирменный бургер,<br>вы не
             разочаруетесь!</p>
+          </div>
         </li>
-        <li class="first-subargument-item">
+        <li class="argument-item first-subargument-item">
+          <div class="argument-align">
           <img alt="Сувениры" class="first-subargument-image" height="76" src="img/argument-first-gift.svg" width="64">
-          <h3 class="first-subargument-title">Сувениры</h3>
-          <p class="first-subargument-description">Не только китайского,<br>но и настоящего местного<br>производства!
-          </p>
+          <h3 class="argument-item-title first-subargument-title">Сувениры</h3>
+          <p class="argument-item-description first-subargument-description">Не только китайского,<br>но и настоящего местного<br>производства!</p>
+          </div>
         </li>
       </ul>
-    </div>
+<!--    </div>-->
     <div class="main-argument second-argument">
       <img alt="Второй аргумент" class="second-argument-image" height="384" src="img/arguments-second.jpg" width="800">
       <div class="argument-title">
@@ -92,46 +98,52 @@
       <p class="second-argument-description">Да, по нему можно пройти!<br>Если вы осмелитесь,<br>разумеется</p>
       </div>
     </div>
-    <div class="other-argument">
-      <ul class="other-argument-list">
-        <li class="other-argument-item">
-          <h3 class="other-argument-title">Небольшая<br>площадь</h3>
-          <p class="other-argument-description">-№3-</p>
-          <p class="other-argument-description">Все достопримечательности<br>находятся очень близко</p>
+<!--    <div class="other-argument">-->
+      <ul class="argument-list other-argument-list">
+        <li class="argument-item other-argument-item">
+          <div class="argument-align">
+          <h3 class="argument-item-title other-argument-title">Небольшая<br>площадь</h3>
+          <p class="other-argument-number">-№3-</p>
+          <p class="argument-item-description other-argument-description">Все достопримечательности<br>находятся очень близко</p>
+          </div>
         </li>
-        <li class="other-argument-item">
-          <h3 class="other-argument-title">Красивая<br>дорога</h3>
-          <p class="other-argument-description">-№4-</p>
-          <p class="other-argument-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+        <li class="argument-item other-argument-item">
+          <div class="argument-align">
+          <h3 class="argument-item-title other-argument-title">Красивая<br>дорога</h3>
+          <p class="other-argument-number">-№4-</p>
+          <p class="argument-item-description other-argument-description">Ехать в Седону из Лас-Вегаса<br>совсем не скучно!</p>
+          </div>
         </li>
-        <li class="other-argument-item">
-          <h3 class="other-argument-title">Мало<br>туристов</h3>
-          <p class="other-argument-description">-№5-</p>
-          <p class="other-argument-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
+        <li class="argument-item other-argument-item">
+          <div class="argument-align">
+          <h3 class="argument-item-title other-argument-title">Мало<br>туристов</h3>
+          <p class="other-argument-number">-№5-</p>
+          <p class="argument-item-description other-argument-description">Большинство едет в Гранд<br>Каньон и толпится там</p>
+          </div>
         </li>
       </ul>
-    </div>
+<!--    </div>-->
   </section>
-  <section class="booking">
-    <div class="booking_text">
+  <section class="reserve">
+    <div class="reserve_text">
       <h3 class="reserve-title">Заинтересовались?</h3>
       <p class="reserve-description">Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения
         гостиниц в Седоне</p>
     </div>
-    <div class="booking_button"><a class="button button-book" href="#">Поиск гостиницы в седоне</a></div>
+    <div class="button-reserve-block"><a class="button button-reserve" href="#">Поиск гостиницы в седоне</a></div>
   </section>
   <section class="subscribe subscribe-index">
     <h3 class="subscribe-title">Подпишитесь на рассылку</h3>
     <p class="subscribe-description">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
     <form action="https://echo.htmlacademy.ru/" class="newsletter-form" method="post">
-      <div class="newsletter-email">
-        <label class="visually-hidden" for="newsletter-email">Email</label>
-        <input class="field" id="newsletter-email" name="newsletter-email" placeholder="Ваш e-mail" required
+      <div class="subscribe-email-block">
+        <label class="visually-hidden" for="subscribe-email">Email</label>
+        <input class="field" id="subscribe-email" name="subscribe-email" placeholder="Ваш e-mail" required
                type="email">
-      </div>
-      <button class="button button-subscribe" type="submit">
+        <button class="button button-subscribe" type="submit">
         <span class="visually-hidden">Подписаться</span>
       </button>
+      </div>
     </form>
   </section>
   </div>
