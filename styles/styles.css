@@ -105,8 +105,9 @@ img {
 .navigation-left-item {
   margin-right: 33px;
 }
+
 .navigation-left-item:last-child {
-   margin-right:0;
+  margin-right:0;
 }
 
 .navigation-right-link {
@@ -410,7 +411,7 @@ input[type="email" i] {
   margin-right: 10px;
 }
 
-.catalog-filter-form{
+.catalog-filter-form {
   display: grid;
   grid-template-columns: 217px 312px 368px 160px;
   align-items: center;
