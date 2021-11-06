@@ -61,6 +61,7 @@ img {
 }
 
 .button {
+  display: inline-block;
   font-family: inherit;
   font-weight: 700;
   text-align: center;
@@ -68,14 +69,21 @@ img {
   text-decoration: none;
   text-transform: uppercase;
   border-radius: 4px;
+  padding: 10px 0 9px 0;
+  font-size: 16px;
+  line-height: 20.7px;
+  background-color: #756257;
+  border: none;
+  cursor: pointer;
 }
 
 /*HEADER*/
 .header {
-  margin: 0 auto -5px auto;
   width: 1200px;
+  background-color: #ffffff;
   color: #000000;
-  background-color: #FFFFFF;
+  position: relative;
+  margin: 0 auto;
 }
 
 .navigation {
@@ -83,90 +91,221 @@ img {
   justify-content: space-between;
 }
 
-.navigation-left-list {
+.navigation-list {
   display: flex;
   flex-wrap: wrap;
-  width: 460px;
-  margin: auto 0 auto 71px;
-  padding: 0;
-}
-
-.navigation-left-link {
-  font-family: "PT Sans", sans-serif;
-  font-size: 20px;
-  line-height: 25.88px;
-  font-weight: 700;
-  text-align: center;
-  color: #000000;
-  background-color: #FFFFFF;
-  text-transform: capitalize;
-}
-
-.navigation-left-item {
-  margin-right: 33px;
-}
-
-.navigation-left-item:last-child {
-  margin-right:0;
-}
-
-.navigation-right-link {
-  margin-right: 21px;
+  list-style-type: none;
+  width: 412px;
+  margin: 0;
+  padding-left: 54.5px;
 }
 
 .navigation-user {
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 250px;
-  margin-left: auto;
-  margin-right: 33px;
+  max-width: 270px;
+  margin-left: 0;
+  padding-left: 0;
+  margin-right: 62px;
+  align-items: center;
+  border-radius: 10px;
 }
 
-.button-want {
-  font-size: 16px;
-  line-height: 20.7px;
-  background-color: #756257;
+.navigation-logo {
+  width: 138px;
+  margin: 0 auto;
+  position: absolute;
+  left:calc(50% - 138px/2);
 }
+
+.navigation-link {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: inherit;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 12px 6px 12px;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.navigation-link-user {
+  position: relative;
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  color: inherit;
+  background-color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  padding: 7px;
+  border: 3px solid transparent;
+  height: 18px;
+  border-radius: 10px;
+  outline:none;
+}
+
+.navigation-item {
+  padding-right: 5px;
+}
+
+.navigation-item-user {
+  padding-right: 2px;
+}
+
+.navigation-item-user:nth-last-child(2) {
+  padding-right: 23px;
+}
+
+.navigation-user .navigation-link {
+  min-width: 10.5px;
+  min-height: 16.5px;
+  padding: 10px 10px 10px 10px;
+}
+
+
+.navigation-favorites {
+  position: absolute;
+  margin-top: 14px;
+  margin-left: 61px;
+  width: 19px;
+  min-height: 19px;
+  border-radius: 50%;
+  background-color: #7db54f;
+  text-align: center;
+}
+
+.favorites-number {
+  display: block;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 19px;
+  color: #ffffff;
+  background-color: #7db54f;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  position: absolute;
+  top:-3px;
+  right:-5px;
+}
+
+
+.header-button {
+  display: block;
+  background-color: #756257;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 6px 31px 6px 31px;
+  border: 3px solid #756257;
+  border-radius: 4px;
+  outline: none;
+}
+
 
 /*FOOTER*/
+
 .page-footer {
-  display: flex;
-  width: 1200px;
+  background-color: #ffffff;
+  padding: 28px 60px 40px 60px;
   margin: 0 auto;
-  background-color: #FFFFFF;
+  width: 1200px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .socials {
-  margin: auto 0 auto 0;
+  margin: auto 0;
 }
 
-.social-list {
+.socials-list {
   display: flex;
-  width: 240px;
-  margin: 0 0 0 72px;
+  flex-wrap: wrap;
+  list-style-type: none;
+  align-items: center;
+  width: 170px;
+  margin: 0;
   padding: 0;
 }
 
-.social-item {
-  margin-right: 30px;
+.socials-item {
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 
-.social-item:last-child {
-  margin-right: 0px;
+.socials-item:nth-child(3n) {
+  margin-bottom: 15px;
+  margin-right: 5px;
 }
 
-.partner {
-  max-width: 240px;
-  margin: auto auto auto 72px;
+.socials-link {
+  position: relative;
+  display: block;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  outline: none;
+  min-width: 34px;
+  min-height: 34px;
 }
 
-.contacts {
-  margin: 40px auto 30px auto;
+.socials-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #83b3d3;
+}
+
+
+.contacts{
+  width: 720px;
+  margin: 0 auto;
+  border: 3px solid transparent;
+  box-sizing: border-box;
+  text-align: center;
 }
 
 .footer-contacts-address-phone {
+  font-weight: 400;
   font-size: 40px;
   line-height: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+  border: 3px solid transparent;
+  border-radius: 10px;
+  padding: 8px 15px 8px 15px;
+  box-sizing: border-box;
+}
+
+.partner {
+  display: flex;
+  align-items: center;
+  margin-left:29px;
+}
+
+.htmlacademy-link {
+  border: 3px solid transparent;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
 }
 
 /*MAIN*/
@@ -317,16 +456,19 @@ img {
   padding: 0;
 }
 
+
 .button-reserve-block {
   margin: 0 auto 91px auto;
-  width: 575px;
-  height: 60px;
-  background-color: #756257;
+
 }
 
 .button-reserve {
   font-size: 20px;
   line-height: 36px;
+  width: 575px;
+  height: 60px;
+  background-color: #756257;
+  border-radius: 10px;
 }
 
 .subscribe{
@@ -366,6 +508,8 @@ img {
   line-height: 26px;
   background-color: #83B3D3;
   width: 200px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 .subscribe-form {
   margin: 0 auto;
@@ -380,6 +524,9 @@ input[type="email" i] {
   height: 60px;
   width: 600px;
   border-radius: 10px 0 0 10px;
+  border: 0;
+  margin: 0;
+  padding: 0 19px 0 22px;
 }
 
 
