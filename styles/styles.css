@@ -158,6 +158,10 @@ img {
   padding-right: 23px;
 }
 
+.navigation-item-user:nth-child(3n) {
+  padding-right: 0;
+}
+
 .navigation-user .navigation-link {
   min-width: 10.5px;
   min-height: 16.5px;
@@ -443,6 +447,7 @@ img {
 
 .socials {
   margin: auto 0;
+  box-sizing: border-box;
 }
 
 .socials-list {
@@ -455,12 +460,12 @@ img {
 }
 
 .socials-item {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   margin-right: 5px;
 }
 
 .socials-item:nth-child(3n) {
-  margin-bottom: 15px;
+  /*margin-bottom: 15px;*/
   margin-right: 0;
 }
 
@@ -502,7 +507,7 @@ img {
 
 .contacts {
   width: 720px;
-  margin: 0 auto;
+  margin: auto;
   border: 3px solid transparent;
   box-sizing: border-box;
   text-align: center;
@@ -712,7 +717,7 @@ img {
 }
 
 .reserve{
-  padding-top: 91px;
+  padding: 91px 0;
 }
 
 .reserve-title {
@@ -732,7 +737,7 @@ img {
 }
 
 .button-reserve-block {
-  margin: 0 auto 91px auto;
+  margin: 0 auto;
 
 }
 
@@ -764,6 +769,9 @@ img {
 .subscribe {
   background-color: #FFFFFF;
   text-align: center;
+  margin: 0;
+  padding: 91px 0 0 0;
+  box-sizing: border-box;
 }
 
 .subscribe-index {
@@ -777,7 +785,7 @@ img {
 }
 
 .subscribe-title {
-  margin: 91px 0 15px 0;
+  margin: 0 0 15px 0;
   padding: 0;
   font-size: 30px;
   line-height: 36px;
@@ -871,10 +879,12 @@ img {
   color: #FFFFFF;
   background: #83B3D3 url("../img/catalog-filter-bg.jpg") no-repeat;
   background-size: 100% auto;
+  padding: 0 71px 0 72px;
+  box-sizing: border-box;
 }
 
 .catalog-header-title{
-  margin: 35px 0 5px 71px;
+  margin: 35px 0 5px 0;
   padding: 0;
   font-size: 60px;
   line-height: 77.64px;
@@ -884,7 +894,7 @@ img {
 .breadcrumbs {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 0 45px 71px;
+  margin: 0 0 45px 0;
   padding: 0;
   align-items: baseline;
   background-image: url(../img/icon/icon-next.svg);
@@ -943,7 +953,7 @@ img {
 }
 
 .catalog-filter {
-  margin: 0 0 0 71px;
+  margin: 0;
 }
 
 fieldset {
@@ -965,6 +975,10 @@ fieldset {
 .catalog-filter-item {
   line-height: 23.29px;
   margin-bottom: 15px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .control, .control-label {
@@ -1016,7 +1030,6 @@ fieldset {
   border-radius: 50%;
   content: "";
 }
-
 
 .range {
   position: relative;
