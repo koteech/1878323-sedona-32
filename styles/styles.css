@@ -1041,6 +1041,8 @@ fieldset {
 }
 
 .range-bar {
+  width: 227px;
+  right: 60px;
   position: absolute;
   height: 4px;
   background-color: #ffffff;
@@ -1902,7 +1904,7 @@ fieldset {
   border-radius: 10px;
   margin-bottom: 70px;
   cursor: pointer;
-  
+
 }
 
 .field:hover {
