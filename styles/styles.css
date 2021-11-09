@@ -642,9 +642,9 @@ img {
 }
 
 .argument-title {
-  width: 400px;
-  margin-top: auto;
-  margin-bottom: auto;
+  width: 200px;
+  margin: auto;
+
 }
 
 .argument-list {
@@ -657,6 +657,7 @@ img {
 .first-argument-title {
   text-transform: uppercase;
 }
+
 
 .second-argument-title {
   text-transform: uppercase;
