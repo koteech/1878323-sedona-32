@@ -132,7 +132,6 @@ img {
   text-align: center;
   padding: 6px 12px 6px 12px;
   border: 3px solid transparent;
-  box-sizing: border-box;
   border-radius: 10px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -289,7 +288,7 @@ img {
   top: 62px;
   right: 69px;
   z-index: 1;
-  box-sizing: border-box;
+
   font: inherit;
   background-color: #FFFFFF;
   border: 1px solid #E6E6E6;
@@ -369,7 +368,7 @@ img {
 }
 
 .all-main {
-  box-sizing: border-box;
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -446,7 +445,7 @@ img {
   padding: 28px 60px 40px 60px;
   margin: 0 auto;
   width: 1200px;
-  box-sizing: border-box;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -454,7 +453,7 @@ img {
 
 .socials {
   margin: auto 0;
-  box-sizing: border-box;
+
 }
 
 .socials-list {
@@ -516,7 +515,7 @@ img {
   width: 720px;
   margin: auto;
   border: 3px solid transparent;
-  box-sizing: border-box;
+
   text-align: center;
 }
 
@@ -531,7 +530,7 @@ img {
   border: 3px solid transparent;
   border-radius: 10px;
   padding: 8px 15px 8px 15px;
-  box-sizing: border-box;
+
 
 }
 
@@ -541,13 +540,13 @@ img {
   border-radius: 10px;
   width: 370px;
   outline: none;
-  box-sizing: border-box;
+
 }
 
 .footer-contacts-address-phone:hover {
   padding: 8px 15px 8px 15px;
   color: #756257;
-  box-sizing: border-box;
+
 }
 
 .footer-contacts-address-phone:active {
@@ -555,7 +554,7 @@ img {
   color: #756257;
   opacity: 0.3;
   border: 3px solid transparent;
-  box-sizing: border-box;
+
   border-radius: 10px;
 }
 
@@ -568,7 +567,7 @@ img {
 .htmlacademy-link {
   border: 3px solid transparent;
   border-radius: 10px;
-  box-sizing: border-box;
+
   padding: 10px;
 }
 
@@ -577,7 +576,7 @@ img {
   border-radius: 10px;
   fill: #756257;
   padding: 10px;
-  box-sizing: border-box;
+
 
 }
 
@@ -586,7 +585,7 @@ img {
   padding: 10px;
   border-radius: 10px;
   outline: none;
-  box-sizing: border-box;
+
 
 }
 
@@ -780,7 +779,7 @@ img {
   text-align: center;
   margin: 0;
   padding: 91px 0 0 0;
-  box-sizing: border-box;
+
 }
 
 .subscribe-index {
@@ -889,7 +888,7 @@ img {
   background: #83B3D3 url("../img/catalog-filter-bg.jpg") no-repeat;
   background-size: 100% auto;
   padding: 0 71px 0 72px;
-  box-sizing: border-box;
+
 }
 
 .catalog-header-title{
@@ -1100,7 +1099,7 @@ img {
   display: flex;
   justify-content: center;
   border: 2px solid #FFFFFF;
-  box-sizing: border-box;
+
   border-radius: 4px;
   padding: 14px 19px;
 }
@@ -1286,7 +1285,6 @@ img {
   width: 48px;
   height: 48px;
   border: 2px solid #E5E5E5;
-  box-sizing: border-box;
   background-color: #FFFFFF;
   border-radius: 4px;
 }
@@ -1303,7 +1301,6 @@ img {
 
 .button-light:active {
   border: 2px solid #000000;
-  box-sizing: border-box;
   border-radius: 4px;
 }
 
@@ -1322,6 +1319,21 @@ img {
   display: flex;
   padding: 31px 0 32px 0;
   border-top: 1px solid #E5E5E5;
+}
+
+.hotel-img:hover {
+  opacity: 0.6;
+}
+
+.hotel-link:focus {
+  outline: 3px solid #83B3D3;
+  border: none;
+  padding: 0;
+  border-radius: 0px;
+}
+
+.hotel-img:active {
+  opacity: 0.3;
 }
 
 .hotel-information {
@@ -1437,7 +1449,6 @@ img {
 }
 
 .rating-text {
-  box-sizing: border-box;
   margin-top: auto;
   text-transform: uppercase;
   font-size: 16px;
@@ -1543,10 +1554,6 @@ img {
   color: black;
 }
 
-.object-count {
-  box-sizing: border-box;
-}
-
 .object-count-title {
   margin: 0 51px 0 0;
   padding: 0;
@@ -1598,7 +1605,6 @@ img {
 }
 
 .modal {
-  box-sizing: border-box;
   position: relative;
   margin: auto;
   padding: 40px;
@@ -1687,7 +1693,6 @@ img {
 }
 
 .reg-form-field {
-  box-sizing: border-box;
   background-color: #F2F2F2;
   border-radius: 4px;
   width: 420px;
