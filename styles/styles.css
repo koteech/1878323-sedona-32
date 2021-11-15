@@ -862,7 +862,7 @@ img {
   opacity: 1;
 }
 
-.subscribe-email:focus:invalid {
+.subscribe-email:focus:invalid:not(:placeholder-shown) {
   border: 3px solid #FF5757;
   outline: none;
 }
