@@ -175,13 +175,16 @@
         <div class="catalog-filter-range">
           <span class="catalog-filter-title">Стоимость, ₽:</span>
           <div class="range-inputs">
-            <label class="catalog-filter-label line">от
-              <input class="catalog-filter-input" name="min-price" type="number" value="0">
+            <label class="range-label">
+              <input class="range-input range-input-left" type="number" name="price-from" placeholder="0">
+              <span class="range-placeholder range-placeholder-left">от</span>
             </label>
-            <label class="catalog-filter-label right-label">до
-              <input class="catalog-filter-input" name="max-price" type="number" value="9000">
+            <label class="range-label">
+              <input class="range-input range-input-right" type="number" name="price-to" placeholder="9000">
+              <span class="range-placeholder range-placeholder-right">до</span>
             </label>
           </div>
+
           <div class="range">
             <div class="range-bar">
               <button class="range-toggle toggle-min" type="button">
